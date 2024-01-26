@@ -1,5 +1,9 @@
 pipeline {
-  agent any  // Use any available agent
+  agent agent {
+    docker {
+        image 'carlossg/maven:3-eclipse-temurin-21'
+    }
+}
 
   stages {
     stage('Checkout') {
