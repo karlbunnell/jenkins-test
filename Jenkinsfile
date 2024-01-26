@@ -1,5 +1,5 @@
 pipeline {
-  agent agent {
+  agent {
     docker {
         image 'carlossg/maven:3-eclipse-temurin-21'
     }
