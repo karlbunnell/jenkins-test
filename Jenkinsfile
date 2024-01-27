@@ -2,6 +2,7 @@ pipeline {
   agent {
     docker {
         image 'carlossg/maven:3-eclipse-temurin-21'
+        mounts '/var/run/docker.sock:/var/run/docker.sock'
     }
 }
 
