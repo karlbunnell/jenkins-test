@@ -1,9 +1,6 @@
 pipeline {
-  agent {
-      docker {
-          image 'atlassian/maven:latest'
-      }
-  }  
+  agent any
+  
   stages {
     stage('Checkout') {
       steps {
