@@ -1,7 +1,7 @@
 pipeline {
  agent {
       docker {
-          image 'atlassian/maven:latest'
+          image 'maven:3.9.6-eclipse-temurin-21'
       }
   }
   
